@@ -1,0 +1,41 @@
+--
+INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (1, 'Hu Tao', '90');
+--INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (2, 'Mona', '80');
+--INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (3, 'Eula', '90');
+--INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (4, 'Ninguang', '90');
+--INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (5, 'Jean', '80');
+--INSERT INTO Personaje (id_Personaje, nombre_Personaje, nivel_Personaje) VALUES (6, 'Keching', '90');
+--
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Pyro', '1', '1');
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Hydro', '2', '2');
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Cryo', '3', '3');
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Anemo', '4', '5');
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Geo', '5', '4');
+--INSERT INTO `Elementos` (`nombreElemento`, `idElemento`, `Personajes_idPersonaje`) VALUES ('Electro', '6', '6');
+--
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('1', 'Crit%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('2', 'Daño Crit%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('3', 'Atq%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('4', 'Atq');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('5', 'HP%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('6', 'HP');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('7', 'Def%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('8', 'Def');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('9', 'EM');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('10', 'ER%');
+--INSERT INTO `Substats` (`idSubstats`, `nombreSubstat`) VALUES ('11', 'Daño Elemental%');
+--
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Bruja Carmesí', 'Sombrero', '1', '1');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Bruja Carmesí', 'Caliz', '2', '1');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Bruja Carmesí', 'Flor', '3', '1');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Bruja Carmesí', 'Pluma', '4', '1');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Domador de truenos', 'Reloj', '5', '1');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Corazón de las profundidades', 'Sombrero', '6', '2');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Corazón de las profundidades', 'Pluma', '7', '2');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Final del gladiador', 'Flor', '8', '2');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Final del gladiador', 'Reloj', '9', '2');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Domador de truenos', 'Caliz', '10', '2');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Petra Arcaica', 'Flor', '11', '4');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Petra Arcaica', 'Pluma', '12', '4');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Sombra Verde Esmeralda', 'Pluma', '13', '5');
+--INSERT INTO `Artefactos` (`nombreArtefacto`, `tipoArtefacto`, `idArtefacto`, `Personajes_idPersonaje`) VALUES ('Sombra Verde Esmeralda', 'Reloj', '14', '5');
