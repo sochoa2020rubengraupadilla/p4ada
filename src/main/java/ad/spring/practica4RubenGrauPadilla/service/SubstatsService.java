@@ -3,7 +3,9 @@ package ad.spring.practica4RubenGrauPadilla.service;
 import ad.spring.practica4RubenGrauPadilla.domain.Substats;
 import ad.spring.practica4RubenGrauPadilla.repository.SubstatsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SubstatsService {
     private final SubstatsRepository substatsRepository;
 

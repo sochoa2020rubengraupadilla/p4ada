@@ -4,6 +4,7 @@ import ad.spring.practica4RubenGrauPadilla.domain.Artefactos;
 import ad.spring.practica4RubenGrauPadilla.domain.Personaje;
 import ad.spring.practica4RubenGrauPadilla.repository.ArtefactosRepository;
 import ad.spring.practica4RubenGrauPadilla.repository.PersonajeRepository;
+import ad.spring.practica4RubenGrauPadilla.service.ArtefactosService;
 import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 import org.springframework.http.HttpStatus;
@@ -22,10 +23,13 @@ public class PersonajeRestController {
 
     private final ArtefactosRepository artefactosRepository;
 
+    private final ArtefactosService artefactosService;
+
     //Inyeccion dependencias
-    PersonajeRestController(PersonajeRepository personajeRepository, ArtefactosRepository artefactosRepository) {
+    PersonajeRestController(PersonajeRepository personajeRepository, ArtefactosRepository artefactosRepository,ArtefactosService artefactosService) {
         this.personajeRepository = personajeRepository;
         this.artefactosRepository = artefactosRepository;
+        this.artefactosService=artefactosService;
     }
 
     @GetMapping("/personajes")
@@ -75,12 +79,12 @@ public class PersonajeRestController {
 
     @GetMapping("/artefactosPersonaje/{id}")
     List<Artefactos> artefactosPersonaje(@PathVariable int id) {
-        return artefactosRepository.findArtefactosByIdPersonaje(id);
+        return artefactosService.findArtefactosByIdPersonaje(id);
     }
 
     @GetMapping("/artefactos/{page}")
     List<Artefactos> getAllArtefactos(@PathVariable int page) {
-        List<Artefactos> lista = artefactosRepository.getAllArtefactos(page);
+        List<Artefactos> lista = artefactosService.getAllArtefactos(page);
         return lista;
     }
 

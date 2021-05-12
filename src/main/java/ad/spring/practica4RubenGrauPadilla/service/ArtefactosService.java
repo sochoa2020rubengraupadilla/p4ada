@@ -10,11 +10,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class ArtefactosService {
 
     private final ArtefactosRepository artefactosRepository;
@@ -22,7 +24,6 @@ public class ArtefactosService {
     @Autowired
     private EntityManager em;
 
-    @Autowired
     public ArtefactosService(ArtefactosRepository artefactosRepository) {
         this.artefactosRepository = artefactosRepository;
     }
@@ -35,7 +36,7 @@ public class ArtefactosService {
         artefactosRepository.delete(artefactos);
     }
 
-    public List<Artefactos> findArtefactosByIdPersonaje(String id) {
+    public List<Artefactos> findArtefactosByIdPersonaje(int id) {
 
         QPersonaje qPersonaje = QPersonaje.personaje;
         QArtefactos qArtefactos = QArtefactos.artefactos;
@@ -44,7 +45,7 @@ public class ArtefactosService {
                 .select(qArtefactos)
                 .from(qPersonaje)
                 .join(qPersonaje.artefactos, qArtefactos)
-                .where(qPersonaje.idPersonaje.eq(Integer.valueOf(id)));
+                .where(qPersonaje.idPersonaje.eq(id));
         return query.fetch();
     }
 

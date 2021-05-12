@@ -17,7 +17,7 @@ public class Artefactos {
     private String tipoArtefacto;
 
     @ManyToOne
-    @JoinColumn(name = "Personajes_idPersonaje")
+    @JoinColumn(name = "idPersonaje")
     private Personaje personaje;
 
     @ManyToMany(mappedBy = "artefactos")

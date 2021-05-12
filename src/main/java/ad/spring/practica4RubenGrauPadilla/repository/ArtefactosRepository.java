@@ -9,10 +9,11 @@ import java.util.List;
 
 public interface ArtefactosRepository extends CrudRepository<Artefactos, Integer> {
 
-    public List<Artefactos> findArtefactosByIdPersonaje(int id);
+    //public List<Artefactos> findArtefactosByIdPersonaje(int id);
 
     Page<Artefactos> findAll(Pageable paging);
 
-    public List<Artefactos> getAllArtefactos(int pagina);
+    //public List<Artefactos> getAllArtefactos(int pagina);
+
 
 }

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: ad.spring.practica4RubenGrauPadilla.Practica4RubenGrauPadill
+ aApplication
+
